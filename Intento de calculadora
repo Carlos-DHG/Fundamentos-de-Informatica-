@@ -1,0 +1,39 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main (int argc, char *argv[]) {
+	
+	cout << "Las operaciones disponibles son\n" << endl;
+	cout << "Suma: + " << endl;
+	cout << "Resta: - " << endl;
+	cout << "Multiplicacion: * " << endl;
+	cout << "Division: / " << endl;
+	cout << "Division Euclidiana: % " << endl;
+	cout << "Logaritmo: log " << endl;
+	string operacion ;
+	cout << "Digite el simbolo de la operacion que desee realizar:   " << endl;
+	cin >> operacion ;
+	if(operacion == "log"){cout <<"Digite su numero: ";}
+	else {
+		cout << "Digite sus numeros\n" << endl;};
+	
+	
+	
+	
+	
+	int a;
+	int b;
+	if(operacion == "log"){cin >> a;}
+	else {
+	cin >> a; 
+	cin >> b;};
+	
+	
+	if(operacion == "+"){cout << "El resultado de la suma es:\t"<<a+b;}
+	if(operacion == "-"){cout << "El resultado de la resta es:\t"<<a-b;};
+	if(operacion == "*"){cout << "El resultado de la multiplicacion es:\t"<<a*b;};
+	if(operacion == "/"){cout << "El resultado de la division es:\t"<<a/b;};
+	
+	if(operacion == "%"){cout << "El residuo de la division es: " << a%b << " y el cociente es:" << a/b;};
+	if(operacion == "log"){cout << "Su logaritmo es : "<< log(a);};
