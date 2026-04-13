@@ -1,0 +1,64 @@
+// Impresion de cuadradps y cubos de un numero 1 AL N	
+
+	
+int cuadrado(int n){
+	
+	return n*n;
+};
+int cubo(int &n){
+	
+	return n*n*n;
+};
+
+
+
+int main (int argc, char *argv[]) {
+    
+	int n;
+	cout << "Digite su numero: " ; cin>> n;
+	cout <<"num"<< "\t |"<< "cuadrado"<<" \t|"<<"cubo" << endl;
+	for ( int i = 1; i <= n; i++){
+		cout << i << "\t |" << cuadrado(i) << "\t\t|" << cubo(i)<< endl ;
+		
+	}
+	
+	
+	return 0;
+}
+
+
+// Ejercicio 2
+
+
+bool validar(int n,int m){
+	
+	bool validado = true;
+	if(n > m){
+		validado = false;
+	}
+	return validado;
+}
+
+string producto (int n,int m){
+	int resultado = 1;
+	for(int i = n; i <= m; i++){
+		resultado *= i;
+	}return to_string(resultado);
+	
+	
+}
+	
+		
+int main (int argc, char *argv[]) {
+	int n;
+	int m;
+	cout << "Ingrese su primer numero: "; cin >> n;
+	cout <<"Ingrese su segundo numero: "; cin >> m;
+	
+	validar(n,m);
+	 cout << "el resultado es: " << producto(n,m);
+	
+	
+	
+	return 0;
+}
